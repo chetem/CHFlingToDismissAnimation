@@ -8,9 +8,6 @@
 
 #import "CHSwipeInteractionController.h"
 
-//if no threshold set, default to 0.25
-#define THRESHOLD	(self.threshold > 0) ? self.threshold : 0.25
-
 @implementation CHSwipeInteractionController
 {
 	BOOL _shouldCompleteTransition;
@@ -43,6 +40,8 @@
 			//start an interactive transition
 			self.interactionInProgress = YES;
 			
+			self.threshold = (self.threshold > 0) ? self.threshold : 0.25;
+			
 			[_viewController dismissViewControllerAnimated:YES completion:nil];
 		}
 			break;
@@ -53,7 +52,7 @@
 			fraction = fminf(fmaxf(fraction, 0.0), 1.0);
 			
 			//complete transition?
-			_shouldCompleteTransition = (fraction > THRESHOLD);
+			_shouldCompleteTransition = (fraction > self.threshold) ? YES : NO;
 			
 			//update the animation
 			[self updateInteractiveTransition:fraction];

@@ -11,7 +11,7 @@
 @interface CHSwipeInteractionController : UIPercentDrivenInteractiveTransition
 
 @property (nonatomic, assign) BOOL interactionInProgress;
-@property (assign, nonatomic) NSInteger threshold;
+@property (assign, nonatomic) CGFloat threshold;
 -(void)wireToViewController:(UIViewController *)viewController;
 
 @end
