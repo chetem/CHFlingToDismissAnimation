@@ -35,6 +35,8 @@
 {
 	CHSecondViewController *vc = [[CHSecondViewController alloc]init];
 	[_swipeInteraction wireToViewController:vc];
+//	_swipeInteraction.threshold = 0.3;	//optional
+//	_flingToDismissAnimation.animationDuration = 1.25;	//optional
 	vc.transitioningDelegate = self;
 	[self presentViewController:vc animated:YES completion:nil];
 }
