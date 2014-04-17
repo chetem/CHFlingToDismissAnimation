@@ -6,3 +6,7 @@
 *.xcbkptlist
 
 *.xcscheme
+
+Example Project/CHFlingingViewController.xcodeproj/xcuserdata/developer.xcuserdatad/xcschemes/xcschememanagement.plist
+
+Example Project/CHFlingingViewController.xcodeproj/project.xcworkspace/xcshareddata/CHFlingingViewController.xccheckout
