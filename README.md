@@ -44,4 +44,7 @@ viewController.transitioningDelegate = self;
 ####Additional Info:
 The animation pushes the dismissing view controller up off the screen while also rotating and fading out. It randomly selects between 4 different rotations, varying in degree and direction. 
 
+![alt text](https://github.com/chetem/CHFlingToDismissAnimation/raw/master/Screen%20Shots/Photo%2077.png "Screen Shot 1")
+![alt text](https://github.com/chetem/CHFlingToDismissAnimation/raw/master/Screen%20Shots/Photo%2078.png "Screen Shot 2")
+
 
