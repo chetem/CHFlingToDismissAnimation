@@ -9,7 +9,7 @@ Dismisses a ViewController with a finger flick up. Also supports interactive fin
 
 Getting Started:
 ---------------
-- Drag and drop the animation files into your project.
+- Drag and drop the animation files into your project (found in the Animations folder).
 - In the view controller doing the presenting, create a class instance of both `CHFlingToDismissAnimation` and `CHSwipeInteractionController`, and in your `-init` function allocate them by calling `[CHFlingToDismissAnimation new]` and `[CHSwipeInteractionController new]`, respectively. Make sure this class contains the appropriate imports.
 - Then, when presenting your next view controller, wire your swipeInteractionController to your next view controller by calling `-wireToViewController:`, passing in the view controller you will be presenting.
 - In your current View Controller, you must adhere to the `UIViewControllerTransitioningDelegate`. Then set your current view controller as the delegate of the view controller your are presenting, like so: 
